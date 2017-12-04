@@ -1,4 +1,4 @@
-"=============================================================================
+"======================================================
 "  Author:          dantezhu - http://www.vimer.cn
 "  Email:           zny2008@gmail.com
 "  FileName:        authorinfo.vim
@@ -7,7 +7,7 @@
 "  LastChange:      2011-02-23 16:42:42
 "  History:         support bash's #!xxx
 "                   fix bug for NerdComment's <leader>
-"=============================================================================
+"=====================================================
 if exists('g:loaded_authorinfo')
     finish
 endif
@@ -113,7 +113,7 @@ function s:AddTitle()
     call s:BeforeTitle()
 
     let firstLine = line('.')
-    call setline('.',noTypeChar.'=============================================================================')
+    call setline('.',noTypeChar.'=========================================================')
     normal o
     call setline('.',noTypeChar.preChar.'     FileName: '.expand("%:t"))
     normal o
@@ -132,7 +132,7 @@ function s:AddTitle()
     normal o
     call setline('.',noTypeChar.preChar.'      History:')
     normal o
-    call setline('.',noTypeChar.'=============================================================================')
+    call setline('.',noTypeChar.'=========================================================')
     let lastLine = line('.')
 
     "在最后一行之后做的事情
